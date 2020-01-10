@@ -45,7 +45,7 @@ A solution like `datdot` seems a good candidate to solve that problem
 
 ## Team's experience
 ### [Alexander Praetorius (serapath)](https://www.linkedin.com/in/serapath/)
-![AlexanderPraetorius](https://media.licdn.com/dms/image/C5603AQFK2xA1sRN0_A/profile-displayphoto-shrink_200_200/0?e=1574294400&v=beta&t=HJxn7unNGaQUneHLwNKd5DMjoc3x9hi64hP7jcPEdt4)
+<img alt="AlexanderPraetorius" src="images/serapath.png" width="100" height="100">
 
 **`project manager & full stack javascript engineer`**
 * [Linkedin](https://www.linkedin.com/in/serapath/)
@@ -73,7 +73,7 @@ A solution like `datdot` seems a good candidate to solve that problem
 ---
 
 ### [Nina Breznik](https://www.linkedin.com/in/ninabreznik/)
-![NinaBreznik](https://media.licdn.com/dms/image/C4D03AQHmzXwosr4G1w/profile-displayphoto-shrink_800_800/0?e=1574294400&v=beta&t=0v_QlLDjMIga8PGiRFcCMrR3TbjpJMnNy-467d9kTjs)
+<img alt="NinaBreznik" src="images/ninabreznik.jpg" width="100" height="100">
 
 **`ui/ux and frontend developer`**
 * [Linkedin](https://www.linkedin.com/in/ninabreznik/)
@@ -99,7 +99,7 @@ A solution like `datdot` seems a good candidate to solve that problem
 2. Conference speaking, workshops
 
 ### [`Joshua Mir`](https://www.linkedin.com/in/jam10o/)
-![JoshuaMir](https://pbs.twimg.com/profile_images/1168578808116654084/wotVPELY_400x400.jpg)
+<img alt="JoshuaMir" src="images/joshuamir.jpg" width="100" height="100">
 
 **`advisor and substrate developer`**
 * [Linkedin](https://www.linkedin.com/in/jam10o/)
@@ -107,7 +107,7 @@ A solution like `datdot` seems a good candidate to solve that problem
 * [Github](https://github.com/jam10o)
 
 ### [`Fiona Ye`](https://www.linkedin.com/in/fiona-ye-4095b0154/)
-![FionaYe](https://media.licdn.com/dms/image/C5603AQHXsfDg0ANKOg/profile-displayphoto-shrink_800_800/0?e=1574294400&v=beta&t=3h2dhHVly-6mJYUnt0_wyTDdzZyp3BJ2mb2St1B6fcM)
+<img alt="FionaYe" src="images/fionayaetang.jpg" width="100" height="100">
 
 **`ui/ux adesigner`**
 * [Linkedin](https://www.linkedin.com/in/fiona-ye-4095b0154/)
@@ -120,7 +120,8 @@ A solution like `datdot` seems a good candidate to solve that problem
 |javascript                             |2+      |
 
 ### [`dweb developer`](https://twitter.com/RangerMauve)
-![dweb developer](https://pbs.twimg.com/profile_images/1154260026518884353/8NyLKcWa_400x400.jpg)
+<img alt="dweb developer" src="https://pbs.twimg.com/profile_images/1154260026518884353/8NyLKcWa_400x400.jpg" width="100" height="100">
+
 
 **`dweb developer & dat engineer`**
 * [Twitter](https://twitter.com/RangerMauve)
