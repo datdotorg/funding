@@ -12,20 +12,26 @@ In this milestone we committed to 5 deliverables:
 #### (Completed) D1: Working SRML module
 https://github.com/playproject-io/datdot-substrate/tree/master/datdot-node/pallets/datdot
 
-#### (Completed) D2: Docker container that runs a substrate node using the module
-https://hub.docker.com/repository/docker/ninabreznik/datdot
-
-We basically managed to already create a docker container which runs both, the chain and the service and sends the transactions and does the whole basic hosting service.
-
 #### (Completed) D3: Basic javascript module as a helper to interact with the node
 https://github.com/playproject-io/datdot-service/blob/dev/lab/scenarios/mvp-1.js
 
+We basically managed to already create a docker container which runs both, the chain and the service and sends the transactions and does the whole basic hosting service.
+
 #### (Completed) D4: A screencast that explains how a user can spin up one of those Substrate nodes.
+https://www.loom.com/share/9a861cffba244c089efa094e15979cd2
 
 #### (Completed) D5: Once the node is up, it will be possible to send test transactions that will show how the new functionality works and will create a screencast which shows step by step how it works
+https://www.loom.com/share/7d0aee905e26412894904c2c6efacfac
+
+#### (Completed) D2: Docker container that runs a substrate node using the module and a little demo screencast
+https://hub.docker.com/repository/docker/ninabreznik/datdot
+https://hackmd.io/7MxNA_CVSVej4vBCtAIsjw
+https://www.loom.com/share/159150db48eb4d7da11c9363d3fd3646
 
 #### Additional (Completed) D6: A detailed specification and documentation with the APIs for the Milestone I
 https://fionataeyang.github.io/datdot/#p2p-hosting-protocol
+
+#### Additional: see below in the Milestones II and III
 
 Most of this past months was spent to spec out the details about the roles needed to make this p2p hosting solution work and the economic model with incentives for all these roles. We figured out it makes more sense to spend more time working on the specification than to have to refactor the whole code once we stumble upon the problem.
 
@@ -42,7 +48,8 @@ Thanks for reading and hope you all have a happy and stress-free week!
 ### Milestone II
 D1: Refined working SRML module
 
-D2: Refined javascript module that helps interacting with the node
+(In progress) D2: Refined javascript module that helps interacting with the node
+We already implemented the basic logic of creating using Dat protocol, hosting it and retreiving it from the storage by the hoster to respond to the challenges (as a proof of storage and proof of retrievability). Now in the Milestone II will will focus to make this more robust.
 
 (In progress) D3: Basic web UI which works with a locally running substrate node
 
