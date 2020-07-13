@@ -29,7 +29,7 @@ https://hackmd.io/7MxNA_CVSVej4vBCtAIsjw
 https://www.loom.com/share/159150db48eb4d7da11c9363d3fd3646
 
 #### Additional (Completed) D6: A detailed specification and documentation with the APIs for the Milestone I
-https://fionataeyang.github.io/datdot/#p2p-hosting-protocol
+https://datdot.org
 
 #### Additional: see below in the Milestones II and III
 
