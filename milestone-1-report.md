@@ -72,4 +72,4 @@ https://github.com/playproject-io/datdot-research/blob/master/spec/latest.md
 D4: Record a screen cast to show how to install and use the electron app to pin your data or let it be pinned
 
 (In progress) D5: Detailed documentation which explains all
-https://hackmd.io/04mCttfxT4Ww9i4KjLIz5A
+https://datdot.org/
