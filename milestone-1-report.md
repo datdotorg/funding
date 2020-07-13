@@ -29,7 +29,7 @@ https://hackmd.io/7MxNA_CVSVej4vBCtAIsjw
 https://www.loom.com/share/159150db48eb4d7da11c9363d3fd3646
 
 #### Additional (Completed) D6: A detailed specification and documentation with the APIs for the Milestone I
-https://hackmd.io/VuD_bziuTN654YL8LE3LuA?view
+https://datdot.org
 
 #### Additional: see below in the Milestones II and III
 
@@ -72,4 +72,4 @@ https://github.com/playproject-io/datdot-research/blob/master/spec/latest.md
 D4: Record a screen cast to show how to install and use the electron app to pin your data or let it be pinned
 
 (In progress) D5: Detailed documentation which explains all
-https://datdot.org/
+https://hackmd.io/04mCttfxT4Ww9i4KjLIz5A
