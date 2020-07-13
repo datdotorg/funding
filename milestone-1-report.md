@@ -29,7 +29,7 @@ https://hackmd.io/7MxNA_CVSVej4vBCtAIsjw
 https://www.loom.com/share/159150db48eb4d7da11c9363d3fd3646
 
 #### Additional (Completed) D6: A detailed specification and documentation with the APIs for the Milestone I
-https://datdot.org
+https://hackmd.io/VuD_bziuTN654YL8LE3LuA?view
 
 #### Additional: see below in the Milestones II and III
 
