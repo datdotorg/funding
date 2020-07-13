@@ -46,7 +46,7 @@ Thanks for reading and hope you all have a happy and stress-free week!
 ## What's Next
 
 ### Milestone II
-D1: Refined working SRML module
+(In progress) D1: Refined working SRML module
 
 (In progress) D2: Refined javascript module that helps interacting with the node
 We already implemented the basic logic of creating using Dat protocol, hosting it and retreiving it from the storage by the hoster to respond to the challenges (as a proof of storage and proof of retrievability). Now in the Milestone II will will focus to make this more robust.
@@ -56,7 +56,7 @@ We already implemented the basic logic of creating using Dat protocol, hosting i
 (Completed) D4: Docker container that runs both together: substrate and service
 https://hub.docker.com/repository/docker/ninabreznik/datdot
 
-D5: Screencast that explains how a user can spin up the docker and use it
+(Completed) D5: Screencast that explains how a user can spin up the docker and use it
 
 ### Milestone III
 
