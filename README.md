@@ -1,6 +1,3 @@
-# DatDot
-a p2p solution for hosting files with Dat (Hypercore) protocol.
+P2P networks are more stable and available for popular files, but accessing less popular or rare files can be unreliable due to the need for at least one node to have the requested data and to be able to connect to the peer requesting the data. Meeting this requirement can sometimes be difficult as users may have limited access to the internet or turn off their computers.
 
-join our [telegram](https://t.me/joinchat/CgTftxXJvp6iYayqDjP7lQ) or [gitter](https://gitter.im/playproject-io/community) chat
-
-![](https://i.imgur.com/oGPIbZQ.jpg)
+DatDot project aims to create a system that enables peer-to-peer sharing of storage space and data seeding, eliminating the need for users to rely on renting servers for data hosting or accept the potential unreliability of P2P data sharing. To achieve this goal, our protocol is designed to automate the matchmaking process and conduct periodic checks to ensure reliable hosting and serving of data to readers.
