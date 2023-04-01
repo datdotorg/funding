@@ -6,5 +6,4 @@ DatDot project aims to create a system that enables peer-to-peer sharing of stor
 
 Our work has been so far supported by the Web3 foundation and Polkadot treasury funding. 
 
-<img alt="web3" src="https://upload.wikimedia.org/wikipedia/commons/7/79/WEB3_Final.jpg" width="150" height="70">
-<img alt="polkadot" src="https://cryptologos.cc/logos/polkadot-new-dot-logo.png?v=024" width="70" height="70">
+<img alt="web3" src="https://upload.wikimedia.org/wikipedia/commons/7/79/WEB3_Final.jpg" width="150" height="70"> <img alt="polkadot" src="https://cryptologos.cc/logos/polkadot-new-dot-logo.png?v=024" width="70" height="70">
