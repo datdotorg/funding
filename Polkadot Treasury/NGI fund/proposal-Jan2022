@@ -1,0 +1,120 @@
+---
+tags: datdot
+---
+
+# Polkadot Treasury proposal for JS-based Chain Simulation
+
+## Description
+
+Over the course of development of [DatDot](https://datdot.org) we ended up developing a relatively fully featured substrate chain simulator ([api](https://github.com/playproject-io/datdot-service/blob/wip/lab/simulations/simulate-polkadotjs.js))([logic](https://github.com/playproject-io/datdot-service/blob/wip/lab/simulations/chain.js)) provding the same interface as polkadot.js, for the purposes of UI testing expressing expected behaviour, and writing implementation specs for later implementation in our pallets. 
+
+Currently, this chain simulation code is not very generic and is tailored to simulate the storage and functions we need for DatDot, but it would be reasonable to adapt the idea into a generic solution to allow arbitrary chain teams to specify some set of functions and storage, and generate a scaffold for them to fill out with their required business logic.
+
+We intend to create a treasury proposal to fund the extraction and expansion of this part of our codebase into it's own standalone tool or library.
+
+## Team
+Working on this tool:
+
+Alex Praetorius (@serapath) - https://www.linkedin.com/in/serapath/
+    (2014 -  now) meetup.com/WizardAmigos - co-founder, dev community, meetups, workshops
+    (2015 - 2018) fairydust.agency        - co-founder, p2p web development agency
+    (2017 - 2019) remix.ethereum.org      - javascript/solidity engineer (solidity web IDE)
+    (2018 -  now) dat.foundation          - dat consortium member 
+    (2018 -  now) playproject.io          - co-founder, p2p/blockchain engineer
+    (2019 - 2020) smartcontract.codes     - co-founder, search engine for solidity source code
+    (2020 -  now) datdot.org              - co-founder, substrate-hyperprotocol bridge (p2p hosting)
+    
+Nina Breznik (@ninabreznik)
+
+    (2007 - 2013) [startup founder](http://sosedapp.herokuapp.com/) - https://www.linkedin.com/in/ninabreznik
+    (2013 - 2013) [soundcloud railsgirls summer of code](https://railsgirlssummerofcode.org/blog/soundcloud-gold-sponsor)
+    (2014 -  now) meetup.com/WizardAmigos - co-founder, dev community, meetups, workshops
+    (2015 -  now) refugeeswork.com        - founder
+    (2015 - 2018) fairydust.agency        - co-founder, web development agency
+    (2017 - 2019) remix.ethereum.org      - javascript/solidity engineer (solidity web IDE)
+    (2018 -  now) dat.foundation          - dat consortium member 
+    (2018 -  now) playproject.io          - co-founder, p2p/blockchain engineer
+    (2019 - 2020) smartcontract.codes     - co-founder, search engine for solidity source code
+    (2020 -  now) datdot.org              - co-founder, substrate-hyperprotocol bridge (p2p hosting)
+
+
+## Proposed Design
+
+We intend to release a command line tool which spins up a local server that behaves as if it were a substrate chain;
+the functionality of this server will probably require filling out a simple generated scaffold file (which we are considering watching with live updates) - this would allow substrate frontend devs to prototype their frontend from a single codebase with live updates.
+
+We do not intend on simulating the RPC api of a substrate node (it is fairly trivial to implement "god mode" on a real node), so instead a second component is a drop-in replacement library with the same api as polkadot.js - possibly with the ability to swap between interfacing with a real instance of polkadot.js connected to a genuine substrate chain, and interfacing with our JS chain simulation server.
+
+## Work Done to Date
+
+ * Simulated Block Production
+ * Multiple account management (not cryptographic)
+ * In-memory simulated database
+ * simulated extrinsics
+ * simulated events
+
+## Work to be Done / Milestones
+
+ * Generating a scaffold from required functions and storage apis
+ * Your suggestions?
+
+
+## Budget 
+
+    budget range AND reasoning/time estimations are open to discussion -
+    ie, $10000-$20000 split between 2 devs for 2 weeks of full-time work
+
+DatDot is W3F Grant funded but the scope of our project has changed over time, as such, we have not completed or requested our 2nd and 3rd grant milestones (the team has only received a total of $15k to date) - we have been self funded over the course of the past year as we did not intend for grant funding to cover all of our costs - funds from this proposal will go towards ongoing salary payments to the contractors in our team who cannot afford to self-fund, and potentially towards funding other projects in our ecosystem building components we will likely use in the future (https://github.com/datrs, as an example).
+
+
+---
+
+Tool for devs to:
+- prototype
+- spec out the API (frontend dev together with the chain dev) and then each develop their part 
+
+During our work on a grant supported project - DatDot (still in progress) we figured out we can speed up our development process by translating our specification in a code that simulates the chain logic.
+
+We can use the same API as chain will use, but to have a faster feedback loop (because same developers, building service.js logic can just-in-time also refine the chain simulation logic).
+
+We find this technique extremely useful for getting te first prorotype ready and also for testing new features. Additionally, we find it very handy when substrate needs to be updated to the next version and code needs to be refactored. In this time it happened at first that the JS team was blocked while substrate refinements were in progress, but with using chain simulation code, all these problems went away.
+
+We would love to make this available to other chain developers, specially for those coming from the Node/JS community.
+
+I wonder if the treasury would be up for supporting this?
+
+A quick description of the `JS chain simulation`
+
+
+-------------------------------
+
+it could be a command line tool, that spins up a local server which acts as the chain.
+
+maybe you have to provide it one file, probably a javascript file, which exports one function per extrinsic you want  and you implement them inside that file
+
+so it would require some javascript, otherwise it is hard to define the chain logic - that requires a programming language
+but it would be super fast and you could start coding your frontend or other services against that API while you build the real chain.
+
+the frontend then communicates via a library with the same interface as polkadotjs
+
+---
+
+We noticed there is a problem analysis because we noticed we are moving slow. We figured out the problem is that working on the service and the chain has a slow feedback cycle. To move quicker we need something where we can have some sort of chain that is working while the real chain is being implemented.
+
+We did some research to see how other teams deal with this, to see if there is anything out there already, we figured out there is nothing.
+
+Then we did some planning how would we approach this, what would be smart. Then we figured we already have Polkadot.js and we want to make this work with reusing the same polkadot.js calls, because also the chain talks back to the service through polkadot.js.
+
+So we decided to treat the chain like a black box and started a module that behaves like polkadot.js, as a drop in replacement and all it does is translating polkadot.js calls to websocket json messages to talk to websocket server which receives the messages and translates them to function calls with arguments (custom json rpc) and the functions with arguments represent our extrinsics. Processing is delayed in predefined block intervals. 
+
+All the work on this took us approximately 2 months (1 dev full time) and we would need probably 1-2 months extra (1 dev full time) to turn this into a generic command line tool which allows developers to specify single JS file which exports one function per extrinsic. 
+
+
+
+Prior Work 50% (1 dev 8 weeks)
+integration demo 30% (1 dev, 5 weeks full-time, 60/hr)
+library development 20% (1 dev, 4 weeks full time, 60/hr)
+
+total = 40800
+exchange rate = 15-17usd
+total dots = 2550/16usd
