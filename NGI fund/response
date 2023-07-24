@@ -1,0 +1,17 @@
+"Proposal concerns a Hypercore-based storage system with incentivisation to ensure content availability. 
+The problem at hand is a hard problem, and the proposal does not convincingly argue why this proposal would work whether other efforts struggle.
+The comparison with similar efforts includes only Hypercore-related (and even more specifically, Beaker-related) projects, 
+lacking any mention of e.g. Filecoin and others. 
+The incentivisation system for storage providers seems complex and unproven, 
+and would thus need thorough research to avoid failing or being gamed and leading to data loss. 
+In that light, it is not surprising that while the project has existed for several years, 
+with some prior funding, it remains in a pre-alpha stage. 
+Project appears well-connected with, and possibly usable by, other projects in hypercore ecosystem. 
+Being tightly knit into this stack, it seems unlikely to be usable beyond it (or to reuse technology from outside it); 
+although a successful result within this ecosystem would also be a worthwhile result."
+
+- Technical excellence/feasibility (30%): 3
+- Entrust_Fund Relevance/Impact/Strategic potential (40%): 3
+- Cost effectiveness/Value for money (30%): 4
+
+Overall weighted score: 3.3 out of 7 (with 5.0 being the threshold).
