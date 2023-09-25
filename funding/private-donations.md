@@ -1,6 +1,6 @@
 # Private donations
 
-- eric rangel
+- eric rangelL
 - cryptomuppet
 - jam10o
 - rtn
