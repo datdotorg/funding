@@ -4,6 +4,6 @@ DatDot project aims to create a system that enables peer-to-peer sharing of stor
 
 #### Funding
 
-Our work has been so far supported by the Web3 foundation and Polkadot treasury funding. 
+Our work has been so far supported by the amazing [private supporters](https://github.com/datdotorg/organization/blob/main/funding/private-donations.md) <3, [Dat ecosystem](https://dat-ecosystem.org/), [Play project](https://playproject.io/), [Web3 foundation](https://web3.foundation/) and [Polkadot's open governance treasury funding](https://www.polkadot.network/ecosystem/treasury/). 
 
 <img alt="web3" src="https://upload.wikimedia.org/wikipedia/commons/7/79/WEB3_Final.jpg" width="150" height="70"> <img alt="polkadot" src="https://cryptologos.cc/logos/polkadot-new-dot-logo.png?v=024" width="70" height="70">
